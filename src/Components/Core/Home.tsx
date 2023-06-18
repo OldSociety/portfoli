@@ -16,9 +16,6 @@ function Home() {
             I create user-friendly websites and digital experiences that are
             accessible to everyone.
           </div>
-          {/* <div className="row">
-            <Sections />
-          </div> */}
           <div style={{ position: 'relative', zIndex: 1 }}>
             <Footer />
           </div>
