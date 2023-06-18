@@ -38,7 +38,7 @@ class Cards extends React.Component {
             TS • Next • Nest • Stitches • Mobx • Turbo
           </p>
         </div>
-        {/* <div className="card">
+        <div className="card">
           <div className="exp">
             <a className="exp-title" href="https://smoothstack.com">
               DevOps Engineer - Smoothstack
@@ -52,7 +52,7 @@ class Cards extends React.Component {
           <p className="exp-tools">
             TS • Next • Nest • Stitches • Mobx • Turbo
           </p>
-        </div> */}
+        </div>
       </div>
     )
   }

@@ -1,3 +1,5 @@
+import AdjectiveRotator from "./AdjectiveRotator"
+
 function Social() {
   return (
     <div className="icons">
@@ -81,6 +83,11 @@ function Social() {
             </svg>
           </a>
         </div>
+      </div>
+      <div className="row">
+      <div className="adjectives">
+        <AdjectiveRotator />
+      </div>
       </div>
     </div>
   )

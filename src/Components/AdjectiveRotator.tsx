@@ -2,16 +2,16 @@ import React, { useEffect, useState } from 'react';
 
 const AdjectiveRotator: React.FC = () => {
   const adjectives: string[] = [
-    '( Passionate )',
-    '( Creative )',
-    '( Innovative )',
-    '( Dedicated )',
-    '( Driven )',
-    '( Talented )',
-    '( Adaptable )',
-    '( Ambitious )',
-    '( Resourceful )',
-    '( Inspiring )',
+    'Passionate.',
+    'Creative.',
+    'Innovative.',
+    'Dedicated.',
+    'Driven.',
+    'Talented.',
+    'Adaptable.',
+    'Ambitious.',
+    'Resourceful.',
+    'Inspiring.',
   ];
 
   const [currentAdjectiveIndex, setCurrentAdjectiveIndex] = useState<number>(0);
