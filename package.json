@@ -64,6 +64,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "html-webpack-plugin": "^5.5.3",
+    "react-awesome-reveal": "^4.2.3",
     "sass": "^1.63.4",
     "webpack": "^5.87.0",
     "webpack-cli": "^5.1.4",
