@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import Fireflies from '../Components/Fireflies';
 
+//Render Test
 test('renders fireflies component without errors', () => {
   const getContextMock = jest.fn();
   const originalGetContext = HTMLCanvasElement.prototype.getContext;
