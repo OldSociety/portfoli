@@ -4,9 +4,6 @@ class Cards extends React.Component {
   render() {
     return (
       <div className="cards">
-        <h4 className='work-experience'> —— My Work —— </h4>
-        <h6 className="">{`I'm a software and web developer and a writer based in West Hollywood, California. I love telling stories and working with brands, non-profits, game designers and fiction writers.`}</h6>
-        <p />
         <div className="card">
           <div className="exp">
             <a className="exp-title" href="https://smoothstack.com">
