@@ -26,7 +26,7 @@ function Social() {
         <div className="col-1">
           <a
             className="block"
-            href="https://github.com/oldsociety/portfoli"
+            href="https://github.com/oldsociety/portfolio"
             target="_blank"
             rel="noreferrer"
           >
