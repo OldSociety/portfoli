@@ -8,7 +8,7 @@ function Header() {
         <h4>—— Full Stack Engineer ——</h4>
       </Fade>
       <div>
-        <h6>Coded in Visual Studio Code and built with React.js, Typescript and Bootstrap CSS, deployed with Vercel.</h6>
+        <h6>Coded in Visual Studio Code and built with React.js, Typescript and Bootstrap CSS, deployed with Vercel. </h6>
       </div>
     </header>
   )

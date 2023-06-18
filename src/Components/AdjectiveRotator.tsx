@@ -4,6 +4,9 @@ const AdjectiveRotator: React.FC = () => {
   const adjectives: string[] = [
     'Passionate.',
     'Creative.',
+    'Accountable',
+    'Open-minded',
+    'Patient',
     'Innovative.',
     'Dedicated.',
     'Driven.',
