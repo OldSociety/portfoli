@@ -3,6 +3,7 @@ import Footer from './Footer'
 // import Sections from '../Sections'
 import Fireflies from '../Fireflies'
 import Cards from '../Cards/Cards'
+import AdjectiveRotator from '../AdjectiveRotator'
 
 function Home() {
   return (
@@ -12,10 +13,10 @@ function Home() {
           <div>
             <Header />
           </div>
-          <div>
-            I create user-friendly websites and digital experiences that are
-            accessible to everyone.
+          <div className="">
+            {/* <img src="/assets/images/myImage.jpg" alt="Description" /> */}
           </div>
+
           <div style={{ position: 'relative', zIndex: 1 }}>
             <Footer />
           </div>
@@ -26,6 +27,9 @@ function Home() {
             <div className="">
               <Cards />
             </div>
+          </div>
+          <div className="adjectives">
+            <AdjectiveRotator />
           </div>
         </div>
       </div>

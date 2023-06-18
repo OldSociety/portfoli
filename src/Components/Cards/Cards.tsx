@@ -4,9 +4,8 @@ class Cards extends React.Component {
   render() {
     return (
       <div className="cards">
-        <h4 className='work-experience'>My Work</h4>
-        <div className="">{`Deployed scalable travel, event and telemedicine web and hybrid mobile apps using React SPA and PWA.
-Collaborated in 140+ projects with 50+ clients all around the world. I am also interested in data analytics and visualization.`}</div>
+        <h4 className='work-experience'> —— My Work —— </h4>
+        <h6 className="">{`I'm a software and web developer and a writer based in West Hollywood, California. I love telling stories and working with brands, non-profits, game designers and fiction writers.`}</h6>
         <p />
         <div className="card">
           <div className="exp">

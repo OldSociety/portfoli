@@ -21,9 +21,7 @@ body {
   height: 100%;
   position: relative;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: fantasy;
   font-size: 20px;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
@@ -114,7 +112,7 @@ a:hover {
 // Column2 container
 .column2-container {
   position: relative;
-  height: calc(100vh - 200px); /* Adjust the height based on your needs */
+  // height: calc(100vh - 200px); /* Adjust the height based on your needs */
   overflow-y: auto;
   z-index: 2;
   /* Hide the scroll bar */
@@ -149,7 +147,7 @@ canvas {
   transition: opacity 0.5s;
   transition-delay: 1s;
 
-  padding: 10px 20px;
+  padding: 5px;
   color: inherit;
   transition: background-color 0.3s;
 
@@ -170,6 +168,7 @@ canvas {
   padding-bottom: 150px;
 }
 .cards {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 85%;
   font-stretch: condensed;
 }
@@ -180,3 +179,54 @@ canvas {
 .work-experience {
   text-align: center;
 }
+
+img {
+  height: 200px;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+.adjective {
+  opacity: 0;
+  animation: typing 1s forwards;
+}
+
+@keyframes typing {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+.adjective.show {
+  animation: deleting 1s forwards;
+}
+
+@keyframes deleting {
+  0% {
+    opacity: 1;
+    width: 100%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+  }
+}
+
+.adjectives {
+  text-align: right;
+  font-family:fantasy;
+  // Footer container
+  position: relative;
+}
+
