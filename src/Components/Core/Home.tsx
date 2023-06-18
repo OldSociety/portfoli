@@ -1,8 +1,8 @@
 import Header from './Header'
 import Footer from './Footer'
-// import Sections from '../Sections'
 import Fireflies from '../Fireflies'
 import Cards from '../Cards/Cards'
+import AdjectiveRotator from '../AdjectiveRotator'
 
 function Home() {
   return (
@@ -11,10 +11,6 @@ function Home() {
         <div className="col-lg-5 col-md-6">
           <div>
             <Header />
-          </div>
-          <div>
-            I create user-friendly websites and digital experiences that are
-            accessible to everyone.
           </div>
           <div style={{ position: 'relative', zIndex: 1 }}>
             <Footer />
@@ -26,6 +22,14 @@ function Home() {
             <div className="">
               <Cards />
             </div>
+          </div>
+          <div className="row">
+            <a
+              href="https://support.worldwildlife.org/site/Donation2?df_id=14597&14597.donation=form1&s_src=AWE1800OQ18510A01430RX"
+              className="adjectives"
+            >
+              <AdjectiveRotator />
+            </a>
           </div>
         </div>
       </div>

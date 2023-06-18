@@ -1,4 +1,5 @@
 // Variables
+// --------------------------------------
 $body-bg: #07102e;
 $header-color: white;
 $text-color: rgb(178, 192, 206);
@@ -6,6 +7,7 @@ $spacer: 20rem;
 $spacer-row: 20rem;
 
 // Header
+// --------------------------------------
 h1 {
   color: $header-color;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -16,14 +18,13 @@ h4 {
 }
 
 // Global
+// --------------------------------------
 html,
 body {
   height: 100%;
   position: relative;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: fantasy;
   font-size: 20px;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
@@ -33,7 +34,7 @@ body {
   font-feature-settings: 'ss03', 'cv02', 'cv11';
   font-variation-settings: normal;
   color: $text-color;
-  background-image: linear-gradient(325deg, #0d564f 1%, #041417 50%);
+  background-image: linear-gradient(325deg, #0d564f 1%, #021d22 50%);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: auto;
@@ -42,26 +43,31 @@ body {
 }
 
 // Footer
+// --------------------------------------
 footer {
   position: fixed;
   bottom: 0;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 }
 
 // Main container
+// --------------------------------------
 .main-container {
   margin: ($spacer-row * 0.25) !important;
 }
 
 // Row
+// --------------------------------------
 .row {
   margin-top: ($spacer-row * 0.25) !important;
 }
 
 // Link
+// --------------------------------------
 a {
   color: inherit;
   text-decoration: none;
+  padding-top: 4px;
 
   background: linear-gradient(
       to right,
@@ -88,22 +94,26 @@ a:hover {
 }
 
 // Section links
+// --------------------------------------
 .section-links {
   font-size: 16px;
 }
 
 // Bootstrap icons
+// --------------------------------------
 .bi {
   width: 24px;
   height: 24px;
 }
 
 // Sections container
+// --------------------------------------
 .sections-container {
   min-height: calc(100vh - 200px); /* Adjust the height based on your needs */
 }
 
 // Footer container
+// --------------------------------------
 .footer-container {
   position: fixed;
   bottom: 0;
@@ -112,6 +122,7 @@ a:hover {
 }
 
 // Column2 container
+// --------------------------------------
 .column2-container {
   position: relative;
   height: calc(100vh - 200px); /* Adjust the height based on your needs */
@@ -126,11 +137,13 @@ a:hover {
 }
 
 // Column2 content
+// --------------------------------------
 .column2-content {
   padding: 20px;
 }
 
 // Canvas
+// --------------------------------------
 canvas {
   position: fixed;
   top: 0;
@@ -141,7 +154,8 @@ canvas {
   filter: blur(1px);
 }
 
-//Cards
+// Cards
+// --------------------------------------
 .card {
   background-color: transparent;
   width: 100%; /* Adjust the width as needed */
@@ -149,12 +163,14 @@ canvas {
   transition: opacity 0.5s;
   transition-delay: 1s;
 
-  padding: 10px 20px;
+  padding: 5px;
+  margin: 4px;
   color: inherit;
   transition: background-color 0.3s;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add the shadow on hover */
   }
 }
 
@@ -169,14 +185,69 @@ canvas {
   white-space: pre-line;
   padding-bottom: 150px;
 }
+
 .cards {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 85%;
   font-stretch: condensed;
 }
+
 .exp-title {
   // font-style: italic;
   font-weight: bold;
 }
+
 .work-experience {
   text-align: center;
+}
+
+img {
+  height: 200px;
+  padding: 20px;
+  margin-left: 50px;
+}
+
+.adjective {
+  opacity: 0;
+  animation: typing 1s forwards;
+}
+
+@keyframes typing {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+.adjective.show {
+  animation: deleting 1s forwards;
+}
+
+@keyframes deleting {
+  0% {
+    opacity: 1;
+    width: 100%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 0;
+  }
+}
+
+.adjectives {
+  text-align: right;
+  font-family: fantasy;
+  font-size: smaller;
+  position: relative;
+  opacity: 15%;
 }

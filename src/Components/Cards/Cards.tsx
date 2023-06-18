@@ -4,10 +4,6 @@ class Cards extends React.Component {
   render() {
     return (
       <div className="cards">
-        <h4 className='work-experience'>My Work</h4>
-        <div className="">{`Deployed scalable travel, event and telemedicine web and hybrid mobile apps using React SPA and PWA.
-Collaborated in 140+ projects with 50+ clients all around the world. I am also interested in data analytics and visualization.`}</div>
-        <p />
         <div className="card">
           <div className="exp">
             <a className="exp-title" href="https://smoothstack.com">
@@ -39,7 +35,7 @@ Collaborated in 140+ projects with 50+ clients all around the world. I am also i
             TS • Next • Nest • Stitches • Mobx • Turbo
           </p>
         </div>
-        {/* <div className="card">
+        <div className="card">
           <div className="exp">
             <a className="exp-title" href="https://smoothstack.com">
               DevOps Engineer - Smoothstack
@@ -53,7 +49,7 @@ Collaborated in 140+ projects with 50+ clients all around the world. I am also i
           <p className="exp-tools">
             TS • Next • Nest • Stitches • Mobx • Turbo
           </p>
-        </div> */}
+        </div>
       </div>
     )
   }
