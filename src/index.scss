@@ -17,6 +17,13 @@ h4 {
   color: $header-color;
 }
 
+h5 {
+  color: $header-color;
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+}
+
 // Global
 // --------------------------------------
 html,
@@ -186,7 +193,7 @@ canvas {
   padding-bottom: 150px;
 }
 
-.cards {
+.experience {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 85%;
   font-stretch: condensed;
@@ -203,8 +210,6 @@ canvas {
 
 img {
   height: 200px;
-  padding: 20px;
-  margin-left: 50px;
 }
 
 .adjective {
