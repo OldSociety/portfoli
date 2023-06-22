@@ -1,16 +1,25 @@
-import React from 'react'
+import React from 'react';
 
 function SideProjects() {
   return (
-    <div className="">
-      <h5> —— Side Projects —— </h5>
+    <div className="side-projects">
+      <h5>—— Side Projects ——</h5>
       <div className="card">
-      <a href="https://github.com/OldSociety/Thinkful_WeLoveMovies">
-        <img
-          src="\assets\images\welovemovies.jpg"
-          className="card-img-top"
-          alt="we love movies project"
-        />
+        <a href="https://github.com/OldSociety/character_architect">
+          <img
+            src="assets/images/preview-meridianlore.jpeg"
+            className="card-img-top"
+            alt="Meridian Lore website"
+          />
+        </a>
+      </div>
+      <div className="card">
+        <a href="https://github.com/OldSociety/Thinkful_WeLoveMovies">
+          <img
+            src="\assets\images\welovemovies.jpg"
+            className="card-img-top"
+            alt="we love movies project"
+          />
         </a>
       </div>
       <div className="card">
@@ -22,17 +31,8 @@ function SideProjects() {
           />
         </a>
       </div>
-      {/* <div className="card">
-        <a href="github.com/OldSociety/character_architect">
-          <img
-            src="\assets\images\cardomatic.jpg"
-            className="card-img-top"
-            alt="Meridian Lore website"
-          />
-        </a>
-      </div> */}
     </div>
-  )
+  );
 }
 
-export default SideProjects
+export default SideProjects;
