@@ -1,5 +1,5 @@
-import React from 'react'
-import Social from '../Social'
+import React from 'react';
+import Social from '../Social';
 
 function Footer() {
   return (
@@ -8,7 +8,7 @@ function Footer() {
         <Social />
       </ul>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
