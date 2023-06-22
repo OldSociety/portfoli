@@ -22,6 +22,15 @@ function SideProjects() {
           />
         </a>
       </div>
+      {/* <div className="card">
+        <a href="github.com/OldSociety/character_architect">
+          <img
+            src="\assets\images\cardomatic.jpg"
+            className="card-img-top"
+            alt="Meridian Lore website"
+          />
+        </a>
+      </div> */}
     </div>
   )
 }
