@@ -1,13 +1,16 @@
-// Variables
-// --------------------------------------
+/* Variables */
+/* -------------------------------------- */
 $body-bg: #07102e;
 $header-color: white;
 $text-color: rgb(178, 192, 206);
 $spacer: 20rem;
 $spacer-row: 20rem;
+$card-bg: rgba(255, 255, 255, 0.2);
+$card-shade: 0 4px 6px rgba(0, 0, 0, 0.3);
+$bg-gradient: linear-gradient(325deg, #0a3732 1%, #021b1f 50%);
 
-// Header
-// --------------------------------------
+/* Header */
+/* -------------------------------------- */
 h1 {
   color: $header-color;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -24,8 +27,8 @@ h5 {
   padding-top: 50px;
 }
 
-// Global
-// --------------------------------------
+/* Global */
+/* -------------------------------------- */
 html,
 body {
   height: 100%;
@@ -41,7 +44,7 @@ body {
   font-feature-settings: 'ss03', 'cv02', 'cv11';
   font-variation-settings: normal;
   color: $text-color;
-  background-image: linear-gradient(325deg, #0d564f 1%, #021d22 50%);
+  background-image: $bg-gradient;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow: auto;
@@ -49,16 +52,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-// Footer
-// --------------------------------------
+/* Footer */
+/* -------------------------------------- */
 footer {
   position: fixed;
   bottom: 0;
   padding-bottom: 10px;
 }
 
-// Main container
-// --------------------------------------
+/* Main container */
+/* -------------------------------------- */
 .main-container {
   margin: ($spacer-row * 0.25) !important;
   margin-top: 2rem;
@@ -66,8 +69,8 @@ footer {
   z-index: 1;
 }
 
-// Link
-// --------------------------------------
+/* Link */
+/* -------------------------------------- */
 a {
   color: inherit;
   text-decoration: none;
@@ -97,33 +100,12 @@ a:hover {
   background-size: 0 3px, 100% 3px;
 }
 
-// // Section links
-// // --------------------------------------
-// .section-links {
-//   font-size: 16px;
-// }
-
-// // Bootstrap icons
-// // --------------------------------------
+/* Bootstrap icons */
+/* -------------------------------------- */
 .bi {
   width: 24px;
   height: 24px;
 }
-
-// // Sections container
-// // --------------------------------------
-// .sections-container {
-//   min-height: calc(100vh - 200px); /* Adjust the height based on your needs */
-// }
-
-// // Footer container
-// // --------------------------------------
-// .footer-container {
-//   position: fixed;
-//   bottom: 0;
-//   width: 100%;
-//   z-index: 1;
-// }
 
 .column2-container {
   position: relative;
@@ -139,8 +121,8 @@ a:hover {
   display: none;
 }
 
-// // Canvas
-// // --------------------------------------
+/* Canvas */
+/* -------------------------------------- */
 canvas {
   position: fixed;
   top: 0;
@@ -203,7 +185,7 @@ canvas {
   font-family: fantasy;
   font-size: smaller;
   position: relative;
-  opacity: 45%;
+  opacity: 30%;
 }
 
 .card {
@@ -216,13 +198,16 @@ canvas {
   color: inherit;
   transition: background-color 0.3s;
   border: hidden;
+}
 
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  }
+.card:hover {
+  background-color: $card-bg;
+  box-shadow: $card-shade;
+}
 
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
+  /* Styles for screens up to 767px width */
+  .card {
     height: auto;
   }
 }
@@ -289,4 +274,3 @@ img {
   position: relative;
   z-index: 0;
 }
-
